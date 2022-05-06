@@ -1,10 +1,13 @@
+// React +18 
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import CounterApp from "./CounterApp";
+import PrimeraApp from "./PrimeraApp";
 
-const saludo = <h1>Hola mundo</h1>;
 const divRoot = document.querySelector('#root');
+const root = createRoot( divRoot );
 
-ReactDOM.render( <CounterApp value = {10} /> , divRoot);
+root.render(<PrimeraApp saludo="Hola, Gustavo"/>)
 
+// root.render( <CounterApp value={10}/>)
