@@ -4,7 +4,6 @@ const CharacterByHero = ({ alter_ego, characters }) => {
     if (alter_ego === characters) return <></>;
     if (alter_ego != characters) return <p>{characters}</p>;
 };
-
 export const HeroCard = ({
     id,
     superhero,
@@ -16,12 +15,11 @@ export const HeroCard = ({
     const heroImageUrl = `/assets/heroes/${id}.jpg`;
 
     // const charactersByActor = <p>{characters}</p>;
-
     return (
-        <div className='col'>
+        <div className='col animate__animated animate__fadeIn'>
             <div className='card'>
                 <div className='row no-gutters'>
-                    <div className='col-4'>
+                    <div className='col-4 '>
                         <img
                             src={heroImageUrl}
                             className='card-img'
